@@ -10,6 +10,7 @@
 | Student Number | EDUV12967292 |
 | Programming Language | C++ |
 | Development Environment | OnlineGDB / Visual Studio Code |
+| GitHub Repository | [VukaFit Campus Wellness Centre](https://github.com/NoScriptsZa/VukaFit-Campus-Wellness-Centre) |
 
 ---
 
@@ -18,6 +19,10 @@
 The VukaFit Campus Wellness Centre project consists of four independent C++ console applications developed to manage different aspects of a campus wellness centre.
 
 The programs demonstrate procedural programming concepts, including variables, input validation, conditional statements, loops, functions, arrays and calculations.
+
+**GitHub Repository:** [View VukaFit Campus Wellness Centre](https://github.com/NoScriptsZa/VukaFit-Campus-Wellness-Centre)
+
+---
 
 ## 2. Project Structure
 
@@ -248,3 +253,7 @@ The VukaFit Campus Wellness Centre project demonstrates the use of fundamental C
 Each program was compiled and tested successfully. The project demonstrates input validation, calculations, functions, loops, arrays and basic data analysis.
 
 The completed programs provide a simple solution for managing membership quotations, session bookings, daily check-ins and attendance analytics.
+
+---
+
+**GitHub Repository:** [https://github.com/NoScriptsZa/VukaFit-Campus-Wellness-Centre](https://github.com/NoScriptsZa/VukaFit-Campus-Wellness-Centre)
