@@ -1,97 +1,95 @@
 # VukaFit Campus Wellness Centre
 
-### C++ Programming Assignment
+**C++ Programming Assignment**
 
-**Student Name:** Aneeq Harris  
-**Student Number:** EDUV12967292  
-**Programming Language:** C++  
-**Development Environment:** Visual Studio Code / OnlineGDB
+## Student Information
 
----
-
-## Project Overview
-
-This project consists of four independent C++ console applications developed for the VukaFit Campus Wellness Centre.
-
-The applications demonstrate fundamental procedural programming concepts, including:
-
-- Variables and constants
-- Data types and input/output
-- Selection statements (`if`, `else`, `switch`)
-- Loops (`for`, `while`)
-- Functions
-- One-dimensional and two-dimensional arrays
-- Input validation
-- Mathematical calculations
-
-Each question is implemented in a separate `.cpp` file and can be compiled and executed independently.
+| Detail | Information |
+|---|---|
+| Student Name | Aneeq Harris |
+| Student Number | EDUV12967292 |
+| Programming Language | C++ |
+| Development Environment | OnlineGDB / Visual Studio Code |
 
 ---
 
-## Project Structure
+## 1. Project Overview
+
+The VukaFit Campus Wellness Centre project consists of four independent C++ console applications developed to manage different aspects of a campus wellness centre.
+
+The programs demonstrate procedural programming concepts, including variables, input validation, conditional statements, loops, functions, arrays and calculations.
+
+## 2. Project Structure
 
 | File | Description |
 |---|---|
-| `Question1.cpp` | Student membership quotation system |
-| `Question2.cpp` | Wellness session booking system |
-| `Question3.cpp` | Daily student check-in system |
-| `Question4.cpp` | Weekly attendance analytics system |
+| `Question1.cpp` | Membership quotation system |
+| `Question2.cpp` | Session booking system |
+| `Question3.cpp` | Daily check-in system |
+| `Question4.cpp` | Attendance analytics system |
+| `README.md` | Project documentation and user guide |
+| `screenshots/` | Screenshots showing program execution and testing |
 
 ---
 
-## System Requirements
+## 3. System Requirements
 
-To compile and run the applications, the following are required:
+The programs require:
 
-- Windows, Linux or macOS
-- A C++ compiler (such as GCC)
-- Visual Studio Code or an online C++ compiler
-- Internet connection when using OnlineGDB
+- A computer running Windows, macOS or Linux.
+- A C++ compiler.
+- An internet connection when using OnlineGDB.
+- A code editor such as Visual Studio Code or an online compiler such as OnlineGDB.
 
 ---
 
-## How to Compile and Run
+## 4. How to Compile and Run
 
-### Option 1: OnlineGDB
+Each question is an independent C++ program and must be compiled and executed separately.
 
-1. Visit [OnlineGDB C++ Compiler](https://www.onlinegdb.com/online_c++_compiler).
+### Using OnlineGDB
+
+1. Visit [OnlineGDB](https://www.onlinegdb.com/online_c++_compiler).
 2. Select C++ as the programming language.
-3. Open the required `.cpp` file on your computer.
-4. Copy the source code into the OnlineGDB editor.
-5. Click **Run**.
-6. Follow the instructions displayed in the console.
+3. Open the required `.cpp` file from the repository.
+4. Copy and paste the code into the editor.
+5. Click the Run button.
+6. Enter the requested information in the console.
 
-### Option 2: Visual Studio Code
+### Using Visual Studio Code
 
-1. Open Visual Studio Code.
-2. Open the folder containing the project files.
-3. Open the required `.cpp` file.
-4. Open the integrated terminal.
-5. Compile the program using GCC.
+Open the project folder in Visual Studio Code and use a C++ compiler.
 
-Example:
+Example compilation command:
 
 ```bash
 g++ Question1.cpp -o Question1
 ```
 
-Run the compiled program on Windows:
+Run the compiled program on Windows using:
 
 ```bash
 .\Question1.exe
 ```
 
-Repeat the process for the remaining questions by changing the filename.
+Replace `Question1.cpp` with the required source file when compiling another question.
 
 ---
 
-## Application Descriptions
+## 5. Program Descriptions
 
-### Question 1: Membership Quotation System
+### Question 1 – Membership Quotation
 
-The membership quotation system allows students to select a wellness membership package and membership duration.
+The membership quotation program calculates the cost of a wellness centre membership.
 
-**Membership packages:**
+It allows users to:
+- Enter their student number and full name.
+- Select one of three membership options.
+- Choose a membership duration between one and six months.
+- Add an optional fitness assessment.
+- Receive discounts based on the membership duration.
+
+**Membership options:**
 
 | Membership | Monthly Fee |
 |---|---:|
@@ -99,102 +97,102 @@ The membership quotation system allows students to select a wellness membership 
 | Active Plus | R350 |
 | Complete Wellness | R480 |
 
-**Features:**
-- Captures student information.
-- Calculates membership costs.
-- Applies discounts based on membership duration.
-- Includes an optional fitness assessment fee.
-- Validates membership selections and user input.
+**Discount structure:**
 
-### Question 2: Session Booking System
+- 1–2 months: No discount.
+- 3–5 months: 7% discount.
+- 6 months: 12% discount.
 
-The session booking system allows students to book wellness activities.
+The program calculates the subtotal, discount, assessment fee and final membership cost.
 
-**Available sessions:**
+### Question 2 – Session Booking
 
-| Session | Price per Participant |
-|---|---:|
-| Yoga Fundamentals | R75 |
-| Strength Circuit | R110 |
-| Stress Management | R90 |
+The session booking program allows students to book wellness activities.
 
-**Features:**
-- Displays available wellness sessions.
-- Calculates booking subtotals.
-- Applies a 10% discount for bookings of eight or more participants.
-- Applies a 15% surcharge for Saturday bookings.
-- Calculates the final booking amount and cost per participant.
-- Validates session selections and participant numbers.
+It includes:
+- Yoga Fundamentals – R75 per participant.
+- Strength Circuit – R110 per participant.
+- Stress Management – R90 per participant.
 
-### Question 3: Daily Check-in System
+The program allows between 1 and 12 participants.
 
-The daily check-in system records student participation in wellness activities.
+**Discount and surcharge rules:**
 
-**Available activities:**
-- Gym Floor
-- Group Class
-- Wellness Consultation
+- Bookings of 8 or more participants receive a 10% group discount.
+- Saturday bookings receive a 15% surcharge after the group discount.
+- The final total and cost per participant are displayed.
 
-**Visit categories:**
+The program uses separate functions to calculate costs, validate inputs and display the booking summary.
+
+### Question 3 – Daily Check-ins
+
+The daily check-in program records student visits to the wellness centre.
+
+It includes three activity categories:
+
+1. Gym Floor.
+2. Group Class.
+3. Wellness Consultation.
+
+The program:
+- Allows a maximum of 10 check-in attempts.
+- Records student numbers, activity codes and visit durations.
+- Validates activity codes and visit durations.
+- Counts valid and invalid check-ins.
+- Calculates total valid minutes and average visit duration.
+
+**Visit duration categories:**
 
 | Duration | Category |
 |---|---|
-| 15–44 minutes | Short Visit |
-| 45–89 minutes | Standard Visit |
-| 90–180 minutes | Extended Visit |
+| 15–44 minutes | SHORT VISIT |
+| 45–89 minutes | STANDARD VISIT |
+| 90–180 minutes | EXTENDED VISIT |
 
-**Features:**
-- Allows a maximum of ten check-in attempts.
-- Records student numbers and activity selections.
-- Validates activity codes and visit durations.
-- Tracks valid and invalid check-ins.
-- Calculates total and average visit duration.
-- Displays a long-session check for visits of 120 minutes or more.
+Visits lasting 120 minutes or longer also display a LONG SESSION CHECK message.
 
-### Question 4: Attendance Analytics System
+### Question 4 – Attendance Analytics
 
-The attendance analytics system analyses weekly attendance across three wellness programmes and five weekdays.
+The attendance analytics program analyses attendance across three wellness programmes over five weekdays.
 
-**Programmes:**
-- Yoga
-- Strength
-- Wellness Workshop
+It uses two-dimensional arrays and nested loops to process attendance information.
 
-**Features:**
-- Uses two-dimensional arrays to store attendance information.
-- Uses nested loops to process attendance records.
-- Calculates weekly programme totals and daily averages.
-- Calculates total attendance for each weekday.
+The program:
+- Displays attendance for each programme and weekday.
+- Calculates weekly attendance totals.
+- Calculates daily attendance averages.
 - Identifies the busiest weekday.
 - Identifies the programme with the highest weekly attendance.
-- Marks attendance values of 40 or more as `HIGH DEMAND`.
-- Calculates grand total and overall average attendance.
+- Marks attendance values of 40 or more as HIGH DEMAND.
+- Calculates the grand total and overall average attendance.
+
+The calculations are generated from the attendance array, allowing the results to change when the attendance data is modified.
 
 ---
 
-## Input Validation
+## 6. Input Validation
 
-Input validation is implemented throughout the applications to improve reliability and prevent incorrect selections.
+Input validation is included throughout the programs to reduce incorrect data entry.
 
 Examples include:
 
-- Checking membership codes and membership durations.
-- Checking session codes and participant limits.
-- Checking activity codes and visit durations.
-- Validating Yes/No responses.
-- Limiting daily check-in attempts.
-
-When invalid input is entered, the programs display appropriate error messages.
+- Invalid membership selections are rejected.
+- Membership durations outside the permitted range are rejected.
+- Invalid session codes are rejected.
+- Participant numbers must be between 1 and 12.
+- Check-in durations must be between 15 and 180 minutes.
+- Invalid activity codes are rejected.
+- The programs prevent invalid check-ins from being included in valid attendance calculations.
 
 ---
 
-## Testing and Results
+## 7. Testing and Results
 
-Each application was compiled and tested independently.
+All four programs were compiled and tested using different input scenarios.
 
-A total of **16 test cases** were completed across the four applications.
+A total of 16 test cases were completed successfully.
 
-| Application | Test Cases | Result |
+| Program | Tests Completed | Result |
 |---|---:|---|
 | Question 1 – Membership Quotation | 4 | Passed |
 | Question 2 – Session Booking | 4 | Passed |
@@ -202,4 +200,50 @@ A total of **16 test cases** were completed across the four applications.
 | Question 4 – Attendance Analytics | 4 | Passed |
 | **Total** | **16** | **All Passed** |
 
-The test cases include normal operations, invalid inputs,
+The tests included normal inputs, boundary values, invalid inputs and changed attendance data to confirm that the programs produced the expected results.
+
+---
+
+## 8. Screenshots
+
+The following screenshots provide evidence of the execution and testing of the four programs.
+
+### Question 1 – Membership Quotation
+
+1. [Screenshot 1 – Membership Quotation](screenshots/Q1-Test1.png)
+2. [Screenshot 2 – Discount Calculation](screenshots/Q1-Test2.png)
+3. [Screenshot 3 – Invalid Membership Code](screenshots/Q1-Test3.png)
+4. [Screenshot 4 – Invalid Membership Duration](screenshots/Q1-Test4.png)
+
+### Question 2 – Session Booking
+
+5. [Screenshot 5 – Session Booking](screenshots/Q2-Test1.png)
+6. [Screenshot 6 – Group Discount and Saturday Surcharge](screenshots/Q2-Test2.png)
+7. [Screenshot 7 – Invalid Session Code](screenshots/Q2-Test3.png)
+8. [Screenshot 8 – Invalid Participant Number](screenshots/Q2-Test4.png)
+
+### Question 3 – Daily Check-ins
+
+9. [Screenshot 9 – Multiple Valid Check-ins](screenshots/Q3-Test1.png)
+10. [Screenshot 10 – Minimum Visit Duration](screenshots/Q3-Test2.png)
+11. [Screenshot 11 – Invalid Visit Duration](screenshots/Q3-Test3.png)
+12. [Screenshot 12 – Long Session Check](screenshots/Q3-Test4.png)
+
+### Question 4 – Attendance Analytics
+
+13. [Screenshot 13 – Original Attendance Data](screenshots/Q4-Test1.png)
+14. [Screenshot 14 – Attendance Totals and Averages](screenshots/Q4-Test2.png)
+15. [Screenshot 15 – Busiest Day and Highest Attendance Programme](screenshots/Q4-Test3.png)
+16. [Screenshot 16 – HIGH DEMAND Identification](screenshots/Q4-Test4.png)
+17. [Screenshot 17 – Boundary Testing](screenshots/Q4-Test5.png)
+18. [Screenshot 18 – Changed Attendance Data](screenshots/Q4-Test6.png)
+
+---
+
+## 9. Conclusion
+
+The VukaFit Campus Wellness Centre project demonstrates the use of fundamental C++ programming concepts to develop four practical console applications.
+
+Each program was compiled and tested successfully. The project demonstrates input validation, calculations, functions, loops, arrays and basic data analysis.
+
+The completed programs provide a simple solution for managing membership quotations, session bookings, daily check-ins and attendance analytics.
