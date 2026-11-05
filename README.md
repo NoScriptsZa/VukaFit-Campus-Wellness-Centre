@@ -212,39 +212,45 @@ The tests included normal inputs, boundary values, invalid inputs and changed at
 
 ---
 
-## 8. Screenshots
+## Screenshots
 
-The following screenshots provide evidence of the execution and testing of all four C++ programs.
+The following screenshots show the testing and output of each program.
 
 ### Question 1 – Membership Quotation
 
-1. [Test 1 – Standard Membership Quotation](screenshots/Q1-Test1.png)
-2. [Test 2 – Membership Without Discount](screenshots/Q1-Test2.png)
-3. [Test 3 – Invalid Membership Code](screenshots/Q1-Test3.png)
-4. [Test 4 – Invalid Membership Duration](screenshots/Q1-Test4.png)
+| Test | Screenshot |
+|---|---|
+| Test 1 – Standard Membership | ![Q1 Test 1](screenshots/Q1-Test1.png) |
+| Test 2 – No Discount | ![Q1 Test 2](screenshots/Q1-Test2.png) |
+| Test 3 – Invalid Membership Code | ![Q1 Test 3](screenshots/Q1-Test3.png) |
+| Test 4 – Invalid Duration | ![Q1 Test 4](screenshots/Q1-Test4.png) |
 
 ### Question 2 – Session Booking
 
-5. [Test 1 – Group Booking with Saturday Surcharge](screenshots/Q2-Test1.png)
-6. [Test 2 – Small Weekday Booking](screenshots/Q2-Test2.png)
-7. [Test 3 – Invalid Session Code](screenshots/Q2-Test3.png)
-8. [Test 4 – Invalid Participant Number](screenshots/Q2-Test4.png)
+| Test | Screenshot |
+|---|---|
+| Test 1 – Group Booking on Saturday | ![Q2 Test 1](screenshots/Q2-Test1.png) |
+| Test 2 – Small Weekday Booking | ![Q2 Test 2](screenshots/Q2-Test2.png) |
+| Test 3 – Invalid Session Code | ![Q2 Test 3](screenshots/Q2-Test3.png) |
+| Test 4 – Invalid Participants | ![Q2 Test 4](screenshots/Q2-Test4.png) |
 
 ### Question 3 – Daily Check-ins
 
-9. [Test 1 – Multiple Valid Check-ins and Visit Categories](screenshots/Q3-Test1.png)
-10. [Test 2 – Minimum Visit Duration](screenshots/Q3-Test2.png)
-11. [Test 3 – Invalid Visit Duration](screenshots/Q3-Test3.png)
-12. [Test 4 – Extended Visit and Long Session Check](screenshots/Q3-Test1.png)
+| Test | Screenshot |
+|---|---|
+| Test 1 – Multiple Valid Check-ins | ![Q3 Test 1](screenshots/Q3-Test1.png) |
+| Test 2 – Minimum Visit Duration | ![Q3 Test 2](screenshots/Q3-Test2.png) |
+| Test 3 – Invalid Visit Duration | ![Q3 Test 3](screenshots/Q3-Test3.png) |
+| Test 4 – Extended Visit and Long Session Check | ![Q3 Test 4](screenshots/Q3-Test4.png) |
 
 ### Question 4 – Attendance Analytics
 
-13. [Test 1 – Original Attendance Data](screenshots/Q4-Test1.png)
-14. [Test 2 – Boundary Testing at 40](screenshots/Q4-Test2.png)
-15. [Test 3 – Changed Attendance Data](screenshots/Q4-Test3.png)
-16. [Test 4 – Restored Original Attendance Data](screenshots/Q4-Test4.png)
-
----
+| Test | Screenshot |
+|---|---|
+| Test 1 – Original Attendance Data | ![Q4 Test 1](screenshots/Q4-Test1.png) |
+| Test 2 – Boundary Value of 40 | ![Q4 Test 2](screenshots/Q4-Test2.png) |
+| Test 3 – Changed Attendance Data | ![Q4 Test 3](screenshots/Q4-Test3.png) |
+| Test 4 – Restored Original Data | ![Q4 Test 4](screenshots/Q4-Test4.png) |
 
 ## 9. Conclusion
 
